@@ -1,0 +1,17 @@
+<h1 align='center'><u>AWS S3: Image Comparision Results</u></h1>
+
+<fieldset class="input-creator">
+    <legend>GET</legend>
+<div>
+    <form [formGroup]="loginForm" (ngSubmit)="getImageData()"> <h2> <u> Image Comparision Data: GET Request </u></h2>
+        <div class="form-row">
+            <p-button class="action-button low-button" type="submit" label='Get Request'></p-button>
+        </div>        
+    </form>      
+</div>
+<h3>Results:</h3>
+<div *ngIf="payLoad" class="form-row">
+ <pre><p class="multi_lines_text" [innerHTML]="payLoad"></p></pre>
+   
+</div>  
+</fieldset>
